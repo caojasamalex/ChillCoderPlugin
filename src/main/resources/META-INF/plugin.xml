@@ -1,0 +1,38 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.jetBrainsInternship.pomodoro</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>ChillCoder</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="adjokic24@gmail.com" url="https://www.linkedin.com/in/djokic-aleksandar/">Aleksandar Djokic</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>ChillCoder is a Pomodoro timer plugin designed for IntelliJ IDEA that enhances
+        your coding experience  by integrating relaxing music from YouTube.
+        Stay focused and boost your productivity with customizable work and break intervals
+        while enjoying the soothing sounds of your favorite beats. Whether you’re debugging or developing,
+        ChillCoder creates the perfect ambiance to keep you in the zone.</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="ChillCoder"
+                    factoryClass="com.jetbrainsinternship.chillcoder.ChillCoderPlugin"
+                    anchor="right"
+                    canCloseContents="false"
+        />
+    </extensions>
+</idea-plugin>
